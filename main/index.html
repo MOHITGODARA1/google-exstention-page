@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="output.css">
+  <style>
+    :root{
+      --background-colour:rgb(51, 51, 51);
+      --hover-colour:rgb(102, 102, 102);
+      --second-text:	rgb(102, 102, 102);
+    }
+    .from-custom-start {
+    --tw-gradient-from: rgba(2, 0, 36, 1);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(13, 13, 92));
+  }
+  .to-custom-end {
+    --tw-gradient-to: rgb(10, 10, 69);
+  }
+  </style>
+</head>
+<body class="flex flex-col  bg-gradient-to-bl from-custom-start to-custom-end justify-center items-center">
+  <div class="flex h-[50px] w-[80%] bg-[var(--background-colour)] rounded-md m-9">
+    <div class="flex h-[100%] w-[20%] justify-center items-center">
+      <img src="assets/images/logo.svg" alt="logo">
+    </div>
+    <div class="flex h-[100%] w-[77%] justify-end items-center">
+      <div class="flex justify-center items-center h-[70%] w-[40px] hover:bg-[var(--hover-colour)] border border-amber-50 rounded-md cursor-pointer">
+        <img src="assets/images/icon-sun.svg" alt="sun" >
+      </div>
+    </div>
+  </div>
+  <div class="flex h-[50px] w-[80%] ">
+    <div class="h-[100%] w-[30%] flex justify-center items-end">
+      <h1 class="text-4xl text-white font-medium">Extensions List</h1>
+    </div>
+    <div class="w-[70%] h-[100%]  flex justify-end items-end gap-x-3">
+      <button type="button" class="h-[40px] bg-[var(--background-colour)] w-[60px] rounded-3xl border border-amber-50 hover:bg-[var(--hover-colour)] cursor-pointer text-white">All</button>
+      <button type="button"class="h-[40px] bg-[var(--background-colour)] w-[80px] rounded-3xl border border-amber-50 hover:bg-[var(--hover-colour)] cursor-pointer text-white" >Active</button>
+      <button type="button" class="h-[40px] w-[90px] bg-[var(--background-colour)] rounded-3xl border border-amber-50 hover:bg-[var(--hover-colour)] cursor-pointer text-white">Inactive</button>
+    </div>
+  </div>
+  <div class="h-auto w-[80%]  m-4 grid grid-cols-3 gap-x-3 gap-y-3">
+  <div class=" bg-[var(--background-colour)] h-[200px]  rounded-xl">
+    <div class="h-[60%] w-[100%] flex justify-center items-center" >
+        <img src="assets/images/logo-devlens.svg" alt="logo" class="h-[70px] w-[80px] m-4">
+        <div class="m-0.5">
+          <h3 class="font-bold text-white">DevLense</h3>
+          <p class="text-sm text-[var(--second-text)]">Quickly inspect page   layouts and visualize element boundries.</p>
+        </div>
+      </div>
+      <div class="w-[100%] h-[35%]  flex">
+        <div class="w-[40%] h-[100%] flex items-end  ">
+          <button type="button" class="ml-4 h-[40px] w-[90px] rounded-4xl border border-white cursor-pointer hover:bg-[var(--hover-colour)] text-white">Remove</button>
+        </div>
+        <div class="w-[60%] h-[100%] flex justify-end items-end ">
+          <label class="relative inline-flex items-center cursor-pointer mr-2">
+           <input type="checkbox" value="" class="sr-only peer">
+            <div class="w-9 h-5 bg-red-500 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-300 rounded-full peer dark:bg-gray-700 peer-checked:bg-green-500 transition-colors duration-300"></div>
+            <div class="absolute left-0.5 top-0.5 bg-white w-4 h-4 rounded-full transition-transform duration-300 peer-checked:translate-x-full"></div>
+          </label>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class=" bg-[var(--background-colour)] h-[200px]  rounded-xl">
+    <div class="h-[60%] w-[100%] flex justify-center items-center" >
+        <img src="assets/images/logo-style-spy.svg" alt="logo" class="h-[70px] w-[80px] m-4">
+        <div class="m-0.5">
+          <h3 class="font-bold text-white">StyleSpy</h3>
+          <p class="text-sm text-[var(--second-text)]">Instantly analyze and copy CSS from any wepage element</p>
+        </div>
+      </div>
+      <div class="w-[100%] h-[35%]  flex">
+        <div class="w-[40%] h-[100%] flex items-end  ">
+          <button type="button" class="ml-4 h-[40px] w-[90px] rounded-4xl border border-white cursor-pointer hover:bg-[var(--hover-colour)] text-white">Remove</button>
+        </div>
+        <div class="w-[60%] h-[100%] flex justify-end items-end ">
+          <label class="relative inline-flex items-center cursor-pointer mr-2">
+           <input type="checkbox" value="" class="sr-only peer">
+            <div class="w-9 h-5 bg-red-500 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-300 rounded-full peer dark:bg-gray-700 peer-checked:bg-green-500 transition-colors duration-300"></div>
+            <div class="absolute left-0.5 top-0.5 bg-white w-4 h-4 rounded-full transition-transform duration-300 peer-checked:translate-x-full"></div>
+          </label>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class=" bg-[var(--background-colour)] h-[200px]  rounded-xl">
+    <div class="h-[60%] w-[100%] flex justify-center items-center" >
+        <img src="assets/images/logo-speed-boost.svg" alt="logo" class="h-[70px] w-[80px] m-4">
+        <div class="m-0.5">
+          <h3 class="font-bold text-white">SpeedBoost</h3>
+          <p class="text-sm text-[var(--second-text)]">Optmizes browser resourse usage to accelerate page loading</p>
+        </div>
+      </div>
+      <div class="w-[100%] h-[35%]  flex">
+        <div class="w-[40%] h-[100%] flex items-end  ">
+          <button type="button" class="ml-4 h-[40px] w-[90px] rounded-4xl border border-white cursor-pointer  hover:bg-[var(--hover-colour)] text-white">Remove</button>
+        </div>
+        <div class="w-[60%] h-[100%] flex justify-end items-end ">
+          <label class="relative inline-flex items-center cursor-pointer mr-2">
+           <input type="checkbox" value="" class="sr-only peer">
+            <div class="w-9 h-5 bg-red-500 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-300 rounded-full peer dark:bg-gray-700 peer-checked:bg-green-500 transition-colors duration-300"></div>
+            <div class="absolute left-0.5 top-0.5 bg-white w-4 h-4 rounded-full transition-transform duration-300 peer-checked:translate-x-full"></div>
+          </label>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class=" bg-[var(--background-colour)] h-[200px]  rounded-xl">
+    <div class="h-[60%] w-[100%] flex justify-center items-center" >
+        <img src="assets/images/logo-json-wizard.svg" alt="logo" class="h-[70px] w-[80px] m-4">
+        <div class="m-0.5">
+          <h3 class="font-bold text-white">JSONWizard</h3>
+          <p class="text-sm text-[var(--second-text)]">Formats, validates,and prettifies JSON response in-browser</p>
+        </div>
+      </div>
+      <div class="w-[100%] h-[35%]  flex">
+        <div class="w-[40%] h-[100%] flex items-end  ">
+          <button type="button" class="ml-4 h-[40px] w-[90px] rounded-4xl border border-white cursor-pointer  hover:bg-[var(--hover-colour)] text-white">Remove</button>
+        </div>
+        <div class="w-[60%] h-[100%] flex justify-end items-end ">
+          <label class="relative inline-flex items-center cursor-pointer mr-2">
+           <input type="checkbox" value="" class="sr-only peer">
+            <div class="w-9 h-5 bg-red-500 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-300 rounded-full peer dark:bg-gray-700 peer-checked:bg-green-500 transition-colors duration-300"></div>
+            <div class="absolute left-0.5 top-0.5 bg-white w-4 h-4 rounded-full transition-transform duration-300 peer-checked:translate-x-full"></div>
+          </label>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class=" bg-[var(--background-colour)] h-[200px]  rounded-xl">
+    <div class="h-[60%] w-[100%] flex justify-center items-center" >
+        <img src="assets/images/logo-tab-master-pro.svg" alt="logo" class="h-[70px] w-[80px] m-4">
+        <div class="m-0.5">
+          <h3 class="font-bold text-white">TabMaster Pro</h3>
+          <p class="text-sm text-[var(--second-text)]">Quickly inspect page   layouts and visualize element boundries.</p>
+        </div>
+      </div>
+      <div class="w-[100%] h-[35%]  flex">
+        <div class="w-[40%] h-[100%] flex items-end  ">
+          <button type="button" class="ml-4  hover:bg-[var(--hover-colour)] h-[40px] w-[90px] rounded-4xl border border-white cursor-pointer text-white">Remove</button>
+        </div>
+        <div class="w-[60%] h-[100%] flex justify-end items-end ">
+          <label class="relative inline-flex items-center cursor-pointer mr-2">
+           <input type="checkbox" value="" class="sr-only peer">
+            <div class="w-9 h-5 bg-red-500 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-300 rounded-full peer dark:bg-gray-700 peer-checked:bg-green-500 transition-colors duration-300"></div>
+            <div class="absolute left-0.5 top-0.5 bg-white w-4 h-4 rounded-full transition-transform duration-300 peer-checked:translate-x-full"></div>
+          </label>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class=" bg-[var(--background-colour)] h-[200px]  rounded-xl">
+    <div class="h-[60%] w-[100%] flex justify-center items-center" >
+        <img src="assets/images/logo-viewport-buddy.svg" alt="logo" class="h-[70px] w-[80px] m-4">
+        <div class="m-0.5">
+          <h3 class="font-bold text-white">ViewportBuddy</h3>
+          <p class="text-sm text-[var(--second-text)]">Quickly inspect page   layouts and visualize element boundries.</p>
+        </div>
+      </div>
+      <div class="w-[100%] h-[35%]  flex">
+        <div class="w-[40%] h-[100%] flex items-end  ">
+          <button type="button" class="ml-4 h-[40px] w-[90px] rounded-4xl border border-white cursor-pointer  hover:bg-[var(--hover-colour)] text-white">Remove</button>
+        </div>
+        <div class="w-[60%] h-[100%] flex justify-end items-end ">
+          <label class="relative inline-flex items-center cursor-pointer mr-2">
+           <input type="checkbox" value="" class="sr-only peer">
+            <div class="w-9 h-5 bg-red-500 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-300 rounded-full peer dark:bg-gray-700 peer-checked:bg-green-500 transition-colors duration-300"></div>
+            <div class="absolute left-0.5 top-0.5 bg-white w-4 h-4 rounded-full transition-transform duration-300 peer-checked:translate-x-full"></div>
+          </label>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class=" bg-[var(--background-colour)] h-[200px]  rounded-xl">
+    <div class="h-[60%] w-[100%] flex justify-center items-center" >
+        <img src="assets/images/logo-markup-notes.svg" alt="logo" class="h-[70px] w-[80px] m-4">
+        <div class="m-0.5">
+          <h3 class="font-bold text-white">Markup Notes</h3>
+          <p class="text-sm text-[var(--second-text)]">Quickly inspect page   layouts and visualize element boundries.</p>
+        </div>
+      </div>
+      <div class="w-[100%] h-[35%]  flex">
+        <div class="w-[40%] h-[100%] flex items-end  ">
+          <button type="button" class="ml-4 h-[40px] w-[90px] rounded-4xl border border-white cursor-pointer  hover:bg-[var(--hover-colour)] text-white">Remove</button>
+        </div>
+        <div class="w-[60%] h-[100%] flex justify-end items-end ">
+          <label class="relative inline-flex items-center cursor-pointer mr-2">
+           <input type="checkbox" value="" class="sr-only peer">
+            <div class="w-9 h-5 bg-red-500 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-300 rounded-full peer dark:bg-gray-700 peer-checked:bg-green-500 transition-colors duration-300"></div>
+            <div class="absolute left-0.5 top-0.5 bg-white w-4 h-4 rounded-full transition-transform duration-300 peer-checked:translate-x-full"></div>
+          </label>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class=" bg-[var(--background-colour)] h-[200px]  rounded-xl">
+    <div class="h-[60%] w-[100%] flex justify-center items-center" >
+        <img src="assets/images/logo-grid-guides.svg" alt="logo" class="h-[70px] w-[80px] m-4">
+        <div class="m-0.5">
+          <h3 class="font-bold text-white">GridGuides</h3>
+          <p class="text-sm text-[var(--second-text)]">Quickly inspect page   layouts and visualize element boundries.</p>
+        </div>
+      </div>
+      <div class="w-[100%] h-[35%]  flex">
+        <div class="w-[40%] h-[100%] flex items-end  ">
+          <button type="button" class="ml-4 h-[40px] w-[90px] rounded-4xl border border-white cursor-pointer hover:bg-[var(--hover-colour)] text-white">Remove</button>
+        </div>
+        <div class="w-[60%] h-[100%] flex justify-end items-end ">
+          <label class="relative inline-flex items-center cursor-pointer mr-2">
+           <input type="checkbox" value="" class="sr-only peer">
+            <div class="w-9 h-5 bg-red-500 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-300 rounded-full peer dark:bg-gray-700 peer-checked:bg-green-500 transition-colors duration-300"></div>
+            <div class="absolute left-0.5 top-0.5 bg-white w-4 h-4 rounded-full transition-transform duration-300 peer-checked:translate-x-full"></div>
+          </label>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class=" bg-[var(--background-colour)] h-[200px]  rounded-xl">
+    <div class="h-[60%] w-[100%] flex justify-center items-center" >
+        <img src="assets/images/logo-devlens.svg" alt="logo" class="h-[70px] w-[80px] m-4">
+        <div class="m-0.5">
+          <h3 class="font-bold text-white">palette Picker</h3>
+          <p class="text-sm text-[var(--second-text)]">Quickly inspect page   layouts and visualize element boundries.</p>
+        </div>
+      </div>
+      <div class="w-[100%] h-[35%]  flex">
+        <div class="w-[40%] h-[100%] flex items-end  ">
+          <button type="button" class="ml-4 h-[40px] w-[90px] rounded-4xl border border-white cursor-pointer  hover:bg-[var(--hover-colour)] text-white">Remove</button>
+        </div>
+        <div class="w-[60%] h-[100%] flex justify-end items-end ">
+          <label class="relative inline-flex items-center cursor-pointer mr-2">
+           <input type="checkbox" value="" class="sr-only peer">
+            <div class="w-9 h-5 bg-red-500 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-300 rounded-full peer dark:bg-gray-700 peer-checked:bg-green-500 transition-colors duration-300"></div>
+            <div class="absolute left-0.5 top-0.5 bg-white w-4 h-4 rounded-full transition-transform duration-300 peer-checked:translate-x-full"></div>
+          </label>
+      </div>
+    </div>
+  </div>
+
+
+  <div class=" bg-[var(--background-colour)] h-[200px]  rounded-xl">
+    <div class="h-[60%] w-[100%] flex justify-center items-center" >
+        <img src="assets/images/logo-link-checker.svg" alt="logo" class="h-[70px] w-[80px] m-4">
+        <div class="m-0.5">
+          <h3 class="font-bold text-white">LinkChecker</h3>
+          <p class="text-sm text-[var(--second-text)]">Quickly inspect page   layouts and visualize element boundries.</p>
+        </div>
+      </div>
+      <div class="w-[100%] h-[35%]  flex">
+        <div class="w-[40%] h-[100%] flex items-end  ">
+          <button type="button" class="ml-4 h-[40px] w-[90px] rounded-4xl border border-white cursor-pointer hover:bg-[var(--hover-colour)] text-white">Remove</button>
+        </div>
+        <div class="w-[60%] h-[100%] flex justify-end items-end ">
+          <label class="relative inline-flex items-center cursor-pointer mr-2">
+           <input type="checkbox" value="" class="sr-only peer">
+            <div class="w-9 h-5 bg-red-500 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-300 rounded-full peer dark:bg-gray-700 peer-checked:bg-green-500 transition-colors duration-300"></div>
+            <div class="absolute left-0.5 top-0.5 bg-white w-4 h-4 rounded-full transition-transform duration-300 peer-checked:translate-x-full"></div>
+          </label>
+      </div>
+    </div>
+  </div>
+
+
+  <div class=" bg-[var(--background-colour)] h-[200px]  rounded-xl">
+    <div class="h-[60%] w-[100%] flex justify-center items-center" >
+        <img src="assets/images/logo-dom-snapshot.svg" alt="logo" class="h-[70px] w-[80px] m-4">
+        <div class="m-0.5">
+          <h3 class="font-bold text-white">DOM Snapsot</h3>
+          <p class="text-sm text-[var(--second-text)]">Quickly inspect page   layouts and visualize element boundries.</p>
+        </div>
+      </div>
+      <div class="w-[100%] h-[35%]  flex">
+        <div class="w-[40%] h-[100%] flex items-end  ">
+          <button type="button" class="ml-4 h-[40px] w-[90px] rounded-4xl border border-white cursor-pointer  hover:bg-[var(--hover-colour)] text-white">Remove</button>
+        </div>
+        <div class="w-[60%] h-[100%] flex justify-end items-end ">
+          <label class="relative inline-flex items-center cursor-pointer mr-2">
+           <input type="checkbox" value="" class="sr-only peer">
+            <div class="w-9 h-5 bg-red-500 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-300 rounded-full peer dark:bg-gray-700 peer-checked:bg-green-500 transition-colors duration-300"></div>
+            <div class="absolute left-0.5 top-0.5 bg-white w-4 h-4 rounded-full transition-transform duration-300 peer-checked:translate-x-full"></div>
+          </label>
+      </div>
+    </div>
+  </div>
+
+
+  <div class=" bg-[var(--background-colour)] h-[200px]  rounded-xl">
+    <div class="h-[60%] w-[100%] flex justify-center items-center" >
+        <img src="assets/images/logo-console-plus.svg" alt="logo" class="h-[70px] w-[80px] m-4">
+        <div class="m-0.5">
+          <h3 class="font-bold text-white">ConsolePlus</h3>
+          <p class="text-sm text-[var(--second-text)]">Quickly inspect page   layouts and visualize element boundries.</p>
+        </div>
+      </div>
+      <div class="w-[100%] h-[35%]  flex">
+        <div class="w-[40%] h-[100%] flex items-end  ">
+          <button type="button" class="ml-4 h-[40px] w-[90px] rounded-4xl border border-white cursor-pointer  hover:bg-[var(--hover-colour)] text-white">Remove</button>
+        </div>
+        <div class="w-[60%] h-[100%] flex justify-end items-end ">
+          <label class="relative inline-flex items-center cursor-pointer mr-2">
+           <input type="checkbox" value="" class="sr-only peer">
+            <div class="w-9 h-5 bg-red-500 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-300 rounded-full peer dark:bg-gray-700 peer-checked:bg-green-500 transition-colors duration-300"></div>
+            <div class="absolute left-0.5 top-0.5 bg-white w-4 h-4 rounded-full transition-transform duration-300 peer-checked:translate-x-full"></div>
+          </label>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+  
+  
+</body>
+</html>
