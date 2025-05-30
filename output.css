@@ -306,6 +306,9 @@
   .w-\[30px\] {
     width: 30px;
   }
+  .w-\[35px\] {
+    width: 35px;
+  }
   .w-\[40\%\] {
     width: 40%;
   }
@@ -547,9 +550,19 @@
       width: 20;
     }
   }
+  .md\:w-\[30\%\] {
+    @media (width >= 48rem) {
+      width: 30%;
+    }
+  }
   .md\:w-\[60px\] {
     @media (width >= 48rem) {
       width: 60px;
+    }
+  }
+  .md\:w-\[70\%\] {
+    @media (width >= 48rem) {
+      width: 70%;
     }
   }
   .md\:w-\[77\%\] {
